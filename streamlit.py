@@ -27,5 +27,6 @@ if st.button('Prediksi penyakit jantung') :
     else:
         heart_diagnose = 'Pasien tidak terkena penyakit jantung'
 
-    st.success(heart_diagnose)
+    st.write("Hasil Prediksi: ")
+    st.write(heart_diagnose)
     
