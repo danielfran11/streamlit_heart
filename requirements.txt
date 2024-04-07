@@ -3,3 +3,7 @@ pandas
 streamlit
 pip
 scikit-learn
+plotly
+yfinance
+pandas-datareader
+prophet
