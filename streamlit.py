@@ -19,7 +19,7 @@ thalach = st.text_input ('Masukan angka detak jantung maksimum (thalach)')
 
 heart_diagnose = ' '
 
-if st.button('Prediksi penyakit jantung') :
+if st.button('Submit') :
     heart_prediction = model.predict([[age, sex, cp, trestbps, chol, fbs, thalach]])
 
     if(heart_prediction[0] == 1):
