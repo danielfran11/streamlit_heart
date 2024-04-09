@@ -15,7 +15,14 @@ cp = st.text_input ("Masukan tingkatan nyeri dada (cp)")
 trestbps = st.text_input ('Masukan angka tekanan darah (trestbps)')
 chol = st.text_input ('Masuka angka kolesterol (chol)')
 fbs = st.text_input ('Masukan angka gula darah puasa (fbs)')
+restecg = st.text_input ('Masukan angka resting electrocardiographic (restecg)')
 thalach = st.text_input ('Masukan angka detak jantung maksimum (thalach)')
+exang = st.text_input ('Masukan angka exercise induced angina (exang)')
+oldpeak = st.text_input ('Masukan angka depression induced (oldpeak)')
+slope = st.text_input ('Masukan angka kemiringan segmen latihan ST (slope)')
+ca = st.text_input ('Masukan angka major vessels (ca)')
+thal = st.text_input ('Masukan angka tipe jenis defek jantung (thal)')
+
 
 heart_diagnose = ' '
 
