@@ -9,6 +9,8 @@ model = pickle.load(open('model.sav', 'rb'))
 # judul web
 st.title('Prediksi Penyakit Jantung')
 
+col1, col2 = st.columns(2)
+
 with col1:
     age = st.text_input ('Masukan usia (age)')
 with col2:
