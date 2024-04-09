@@ -40,7 +40,7 @@ with col1:
 heart_diagnose = ' '
 
 if st.button('Submit') :
-    heart_prediction = model.predict([[age, sex, cp, trestbps, chol, fbs, thalach]])
+    heart_prediction = model.predict([[age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, oldpeak, slope, ca, thal]])
 
     if(heart_prediction[0] == 1):
         heart_diagnose = 'Pasien terkena penyakit jantung'
