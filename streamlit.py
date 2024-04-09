@@ -4,7 +4,7 @@ import streamlit
 import streamlit as st
 
 # Load the Random Forest CLassifier model
-model = pickle.load(open('model.sav', 'rb'))
+model = pickle.load(open('penyakit_jantung.sav', 'rb'))
 
 # judul web
 st.title('Prediksi Penyakit Jantung')
@@ -41,7 +41,7 @@ with col1:
 
 heart_diagnose = ' '
 
-if st.button('Submit') :
+if st.button('Prediksi penyakit jantung') :
     heart_prediction = model.predict([[age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, oldpeak, slope, ca, thal]])
 
     if(heart_prediction[0] == 1):
@@ -51,4 +51,3 @@ if st.button('Submit') :
 
     st.write("Hasil Prediksi: ")
     st.write(heart_diagnose)
-    
