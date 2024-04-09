@@ -4,7 +4,7 @@ import streamlit
 import streamlit as st
 
 # Load the Random Forest CLassifier model
-model = pickle.load(open('penyakit_jantung.sav', 'rb'))
+model = pickle.load(open('model.sav', 'rb'))
 
 # judul web
 st.title('Prediksi Penyakit Jantung')
